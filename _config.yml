@@ -1,0 +1,8 @@
+title: German-b.GitHub.io
+description: Personal website.
+google_analytics: 
+show_downloads: true
+theme: jekyll-theme-midnight
+
+gems:
+  - jekyll-mentions
