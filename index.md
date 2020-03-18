@@ -1,6 +1,6 @@
 <script async src="//api.salemove.com/salemove_integration.js"></script>
 
-                    <form action="/action_page.php">
+  <form action="/action_page.php">
   <p>Please select your gender:</p>
   <input type="radio" id="male" name="gender" value="male">
   <label for="male">Male</label><br>
