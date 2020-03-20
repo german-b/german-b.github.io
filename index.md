@@ -19,5 +19,8 @@
   <input type="radio" id="age3" name="age" value="100">
   <label for="age3">61 - 100</label><br><br>
   <input type="submit" value="Submit">
+  <br><br>
+  <label for="disabled">Cobrowsing disabled field:</label>
+  <input type="text" id="disabled" name="disabled" class="sm_cobrowsing_disabled_field"><br><br>
 </form>
 Back to [tumblr](https://germanprod.tumblr.com/en/english)
