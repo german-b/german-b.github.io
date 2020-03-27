@@ -21,6 +21,6 @@
   <input type="submit" value="Submit">
   <br><br>
   <label for="disabled">Cobrowsing disabled field:</label>
-  <input type="text" id="disabled" name="disabled" class="sm_cobrowsing_disabled_field sm_cobrowsing_masked_field"><br><br>
+  <input type="text" id="disabled" name="disabled" class="sm_cobrowsing_masked_field"><br><br>
 </form>
 Back to [tumblr](https://germanprod.tumblr.com/en/english)
