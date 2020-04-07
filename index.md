@@ -1,4 +1,4 @@
-<script async src="//api.salemove.com/salemove_integration.js"></script>
+<script async src="//api.beta.salemove.com/salemove_integration.js"></script>
 
   <form action="/action_page.php">
   <p>Please select your gender:</p>
