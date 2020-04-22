@@ -9,7 +9,20 @@
   <input type="radio" id="other" name="gender" value="other">
   <label for="other">Other</label>
 
-  <br>  
+  <br>
+<div type=“numbered” class=“ng-scope ng-isolate-scope”><ol ng-transclude=“”>
+<li class=“ng-scope ng-isolate-scope”><div ng-transclude=“”>
+Finalize your tax prep
+</div></li>
+<li class=“ng-scope ng-isolate-scope”><div ng-transclude=“”>
+You paid exactly the right amount this year - Nice work!<span class=“ta-link-outer ng-scope ng-isolate-scope” type=“learn-more” destination=“Zero Balance” priv-attrs=“{}“><a class=“ta-link learnmore indentfix ml-1 ” tabindex=“-1" onmouseover=“window.status=‘Click to learn more about this topic’; return true;” onmouseout=“window.status=‘’; return true;” href=“#” onclick=“OnLearnMore(‘/taxmanager2019/taxmanager.dll/LearnMore?topic=’, ‘topic:learn more/Zero Balance’); googleAnalyticsEvent(‘Interview Button’, ‘Learn More’, ‘Zero Balance’); return false;“><span ng-transclude=“”><i class=“icon icon-info”><span class=“sr-only”>Learn More</span></i></span></a></span>
+</div></li>
+<li class=“ng-scope ng-isolate-scope”><div ng-transclude=“”>
+File your taxes
+</div></li>
+</ol></div>
+   <br> 
+   
 
   <p>Please select your age:</p>
   <input type="radio" id="age1" name="age" value="30">
