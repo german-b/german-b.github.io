@@ -1,5 +1,15 @@
 <script src="//api.glia.com/salemove_integration.js"></script>
-
+<script> 
+sm.getApi({version: 'v1'}).then(function(glia) {
+  glia.updateInformation({
+    "customAttributes":{"chat":"enabled"}
+    }).then(function() {
+      console.log("Successfully updated visitor attributes");
+  }).catch(function(error) {
+      console.log("Failed to set attributes for visitor");
+  });
+});
+</script>
   <form action="/action_page.php">
   <p>Please select your gender:</p>
   <input type="radio" id="male" name="gender" value="male">
