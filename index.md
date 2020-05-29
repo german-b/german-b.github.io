@@ -50,7 +50,7 @@ Back to [tumblr](https://germanprod.tumblr.com/en/english)
 To [Raigo's site](https://raigo88.tumblr.com/)
 
 
-<iframe class="EmbeddedAppFrame" src="https://www.google.com" cobrowsable_iframe_id="3db11631-642c-4acd-837c-954bc3807afd" cobrowsable_with_mutations="true"></iframe>
+<iframe class="EmbeddedAppFrame" src="" cobrowsable_iframe_id="3db11631-642c-4acd-837c-954bc3807afd" cobrowsable_with_mutations="true"></iframe>
 <style type="text/css">
 
     .EmbeddedAppFrame
