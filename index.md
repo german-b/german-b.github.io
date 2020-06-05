@@ -1,4 +1,4 @@
-<script src="//api.glia.com/salemove_integration.js"></script>
+<script src="https://api.glia.com/salemove_integration.js"></script>
 <script> 
 sm.getApi({version: 'v1'}).then(function(glia) {
   glia.updateInformation({
