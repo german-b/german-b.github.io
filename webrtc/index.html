@@ -117,7 +117,10 @@
             }
 
             function handleError(error) {
-                console.log('navigator.getUserMedia error: ', error);
+                console.log('navigator.getUserMedia error: ');
+                str = JSON.stringify(error);
+                str = JSON.stringify(str, null, 4); // (Optional) beautiful indented output.
+                console.log(str); // Logs output to dev tools console.
                 callback(true, error);
             }
 
