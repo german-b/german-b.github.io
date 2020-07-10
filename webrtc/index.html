@@ -91,9 +91,10 @@
 
         function testGetUserMedia() {
             if (navigator && navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+                console.log('testGetUserMedia success');
                 return true;
             }
-
+            console.log('testGetUserMedia failure');
             return false;
         };
 
@@ -105,7 +106,7 @@
 
             var constraints = {
                 video: true,
-                audio: false
+                audio: true
             };
 
             function handleSuccess(stream) {
