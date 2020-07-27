@@ -69,7 +69,7 @@ This is a DIV element.
 <script>
 function myFunction() {
    var element = document.getElementById("gliaDiv");
-   element.classList.toggle("open");
+   element.classList.toggle("this--open");
 }
 </script>
 
