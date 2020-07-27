@@ -50,7 +50,7 @@ Back to [tumblr](https://germanprod.tumblr.com/en/english)
 To [WebRTC](/webrtc)
 
 <style>
-.open {
+.this--open {
   width: 100%;
   padding: 25px;
   background-color: coral;
