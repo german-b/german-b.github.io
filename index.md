@@ -33,7 +33,29 @@ File your taxes
 </ol></div>
    <br> 
    
+<style>
+.open {
+  width: 100%;
+  padding: 25px;
+  background-color: coral;
+  color: white;
+  font-size: 25px;
+  box-sizing: border-box;
+}
+</style>
 
+<button onclick="myFunction()">Try it</button>
+
+<div id="gliaDiv" class="element">
+This is a DIV element.
+</div>
+
+<script>
+function myFunction() {
+   var element = document.getElementById("gliaDiv");
+   element.classList.toggle("open");
+}
+</script>
   <p>Please select your age:</p>
   <input type="radio" id="age1" name="age" value="30">
   <label for="age1">0 - 30</label><br>
