@@ -33,6 +33,22 @@ File your taxes
 </ol></div>
    <br> 
    
+
+  <p>Please select your age:</p>
+  <input type="radio" id="age1" name="age" value="30">
+  <label for="age1">0 - 30</label><br>
+  <input type="radio" id="age2" name="age" value="60">
+  <label for="age2">31 - 60</label><br>  
+  <input type="radio" id="age3" name="age" value="100">
+  <label for="age3">61 - 100</label><br><br>
+  <input type="submit" value="Submit">
+  <br><br>
+  <label for="disabled">Cobrowsing disabled field:</label>
+  <input type="text" id="disabled" name="disabled" class="sm_cobrowsing_masked_field"><br><br>
+</form>
+Back to [tumblr](https://germanprod.tumblr.com/en/english)
+To [WebRTC](/webrtc)
+
 <style>
 .open {
   width: 100%;
@@ -56,21 +72,6 @@ function myFunction() {
    element.classList.toggle("open");
 }
 </script>
-  <p>Please select your age:</p>
-  <input type="radio" id="age1" name="age" value="30">
-  <label for="age1">0 - 30</label><br>
-  <input type="radio" id="age2" name="age" value="60">
-  <label for="age2">31 - 60</label><br>  
-  <input type="radio" id="age3" name="age" value="100">
-  <label for="age3">61 - 100</label><br><br>
-  <input type="submit" value="Submit">
-  <br><br>
-  <label for="disabled">Cobrowsing disabled field:</label>
-  <input type="text" id="disabled" name="disabled" class="sm_cobrowsing_masked_field"><br><br>
-</form>
-Back to [tumblr](https://germanprod.tumblr.com/en/english)
-To [WebRTC](/webrtc)
-
 
 <iframe class="EmbeddedAppFrame" src="" cobrowsable_iframe_id="3db11631-642c-4acd-837c-954bc3807afd" cobrowsable_with_mutations="true"></iframe>
 <style type="text/css">
