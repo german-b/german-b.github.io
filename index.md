@@ -1,7 +1,7 @@
 <script src="https://api.glia.com/salemove_integration.js"></script>
 <style>
 .icon {
-    background: url('/img/Accounts-normal.svg') no-repeat center;
+    background: url('/img/1/2/3/Accounts-normal.svg') no-repeat center;
     background-size: auto 35px !important;
     height: 40px;
     display: block;
