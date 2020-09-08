@@ -1,12 +1,6 @@
 <script src="https://api.glia.com/salemove_integration.js"></script>
-<style>
-.icon {
-    background: url('../img/1/2/3/Accounts-normal.svg') no-repeat center;
-    background-size: auto 35px !important;
-    height: 40px;
-    display: block;
-}
- </style>
+<link rel="stylesheet" href="../stylesheets/_glia.scss">
+
   <form action="/">
   <p>Please select your gender:</p>
   <input type="radio" id="male" name="gender" value="male">
