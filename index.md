@@ -4,6 +4,7 @@
     background: url('/img/Accounts-normal.svg') no-repeat center;
     background-size: auto 35px !important;
     height: 40px;
+    display: block;
 }
  </style>
   <form action="/">
@@ -45,7 +46,7 @@ File your taxes
 Back to [tumblr](https://germanprod.tumblr.com/en/english)
 To [WebRTC](/webrtc)
 
-<div style="background-color: #003979">
+<div style="background-color: #003979;width: 100px;height: 100px;">
 <span class="icon"></span>
 </div>
 
