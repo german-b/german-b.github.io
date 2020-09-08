@@ -1,5 +1,5 @@
 <script src="https://api.glia.com/salemove_integration.js"></script>
-<link rel="stylesheet" href="../stylesheets/_glia.scss">
+<link rel="stylesheet" href="../stylesheets/glia.css">
 
   <form action="/">
   <p>Please select your gender:</p>
