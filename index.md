@@ -1,15 +1,11 @@
 <script src="https://api.glia.com/salemove_integration.js"></script>
-<script> 
-sm.getApi({version: 'v1'}).then(function(glia) {
-  glia.updateInformation({
-    "customAttributes":{"chat":"enabled"}
-    }).then(function() {
-      console.log("Successfully updated visitor attributes");
-  }).catch(function(error) {
-      console.log("Failed to set attributes for visitor");
-  });
-});
-</script>
+<style>
+.icon {
+    background: url('/img/Accounts-normal.svg') no-repeat center;
+    background-size: auto 35px !important;
+    height: 40px;
+}
+ </style>
   <form action="/">
   <p>Please select your gender:</p>
   <input type="radio" id="male" name="gender" value="male">
@@ -49,29 +45,9 @@ File your taxes
 Back to [tumblr](https://germanprod.tumblr.com/en/english)
 To [WebRTC](/webrtc)
 
-<style>
-.this--open {
-  width: 100%;
-  padding: 25px;
-  background-color: coral;
-  color: white;
-  font-size: 25px;
-  box-sizing: border-box;
-}
-</style>
-
-<button onclick="myFunction()">Try it</button>
-
-<div id="gliaDiv" class="element">
-This is a DIV element.
+<div style="background-color: #003979">
+<span class="icon"></span>
 </div>
-
-<script>
-function myFunction() {
-   var element = document.getElementById("gliaDiv");
-   element.classList.toggle("this--open");
-}
-</script>
 
 <iframe class="EmbeddedAppFrame" src="" cobrowsable_iframe_id="3db11631-642c-4acd-837c-954bc3807afd" cobrowsable_with_mutations="true"></iframe>
 <style type="text/css">
