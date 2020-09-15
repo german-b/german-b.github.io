@@ -44,7 +44,7 @@ To [WebRTC](/webrtc)
 <span class="icon"></span>
 </div>
 
-<iframe class="EmbeddedAppFrame" src="" cobrowsable_iframe_id="3db11631-642c-4acd-837c-954bc3807afd" cobrowsable_with_mutations="true"></iframe>
+<iframe src="https://webapps.stcu.org/jeansday" cobrowsable_iframe_id="3db11631-642c-4acd-837c-954bc3807afd" cobrowsable_with_mutations="true"></iframe>
 <style type="text/css">
 
     .EmbeddedAppFrame
