@@ -1,4 +1,20 @@
 <script src="https://api.glia.com/salemove_integration.js"></script>
+
+<script>
+  sm.getApi({version: 'v1'}).then(function(glia) {
+  function onQueueStateUpdate(queueState) {
+    const element = document.querySelector('.icon');
+    if (queueState.state !== queueState.QUEUE_STATES.CAN_QUEUE) {
+      console.log("visitor cannot queue");
+      element.style.display = 'none';
+    } else {
+      console.log("visitor can queue");
+      element.style.display = 'inline';
+    }
+  }
+  glia.addEventListener(glia.EVENTS.QUEUE_STATE_UPDATE, onQueueStateUpdate);
+});
+ </script>
 <link rel="stylesheet" href="../stylesheets/glia.scss">
 
   <form action="/">
@@ -41,7 +57,7 @@ Back to [tumblr](https://germanprod.tumblr.com/en/english)
 To [WebRTC](/webrtc)
 
 <div style="background-color: #003979;width: 100px;height: 100px;">
-<span class="icon"></span>
+<span class="icon">Click me to engage!</span>
 </div>
 
 <iframe src="https://webapps.stcu.org/jeansday" cobrowsable_iframe_id="3db11631-642c-4acd-837c-954bc3807afd" cobrowsable_with_mutations="true"></iframe>
