@@ -3,7 +3,7 @@
 <script>
   sm.getApi({version: 'v1'}).then(function(glia) {
   function onQueueStateUpdate(queueState) {
-    const element = document.querySelector('.icon');
+    const element = document.querySelector('[data-sm-show-media-selection-on]');
     if (queueState.state !== queueState.QUEUE_STATES.CAN_QUEUE) {
       console.log("visitor cannot queue");
       element.style.display = 'none';
@@ -57,7 +57,9 @@ Back to [tumblr](https://germanprod.tumblr.com/en/english)
 To [WebRTC](/webrtc)
 
 
-<span class="engagement-trigger">Click me to engage!</span>
+<a data-sm-show-media-selection-on="click" href="javascript:void(0);">
+  Trigger an engagement!
+</a>
 <div style="background-color: #003979;width: 100px;height: 100px;">
 </div>
 
