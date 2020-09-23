@@ -56,8 +56,9 @@ File your taxes
 Back to [tumblr](https://germanprod.tumblr.com/en/english)
 To [WebRTC](/webrtc)
 
+
+<span class="engagement-trigger">Click me to engage!</span>
 <div style="background-color: #003979;width: 100px;height: 100px;">
-<span class="icon">Click me to engage!</span>
 </div>
 
 <iframe src="https://webapps.stcu.org/jeansday" cobrowsable_iframe_id="3db11631-642c-4acd-837c-954bc3807afd" cobrowsable_with_mutations="true"></iframe>
