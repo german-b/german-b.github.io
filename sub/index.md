@@ -1,24 +1,4 @@
 <script src="https://api.glia.com/salemove_integration.js"></script>
-
-<script>
-  sm.getApi({version: 'v1'}).then(function(glia) {
-  function error(){
-    console.log("error while queueing for engagement");
-  }
-  function onQueueStateUpdate(queueState) {
-    const element = document.querySelector('[data-sm-show-media-selection-on]');
-    if (queueState.state !== queueState.QUEUE_STATES.CAN_QUEUE) {
-      console.log("visitor cannot queue");
-      element.style.display = 'none';
-    } else {
-      console.log("visitor can queue");
-      element.style.display = 'inline';
-      glia.queueForEngagement('text').catch(error);
-    }
-  }
-  glia.addEventListener(glia.EVENTS.QUEUE_STATE_UPDATE, onQueueStateUpdate);
-});
- </script>
 <link rel="stylesheet" href="../stylesheets/glia.scss">
 
   <form action="/">
