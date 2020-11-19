@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>OmniBrowse Demo Site For German</title>
+    <title>Call Visualizer (Omnibrowse) Demo Site For German</title>
     <link href="styles.css" rel="stylesheet">
   </head>
   <body>
@@ -164,7 +164,7 @@
       </div>
       <div class="panel-body">
         <div class="embed-responsive embed-responsive-16by9">
-          <iframe id="omnibrowse" class="embed-responsive-item" src="https://developer.glia.com/"></iframe>
+          <iframe id="omnibrowse" class="embed-responsive-item" src="https://german-b.github.io"></iframe>
         </div>
       </div>
       <div class="panel-footer">
