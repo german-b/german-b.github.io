@@ -11,6 +11,10 @@
   <label for="other">Other</label>
 
   <br>
+ <button class="co-team_bio__btn js-glia--heathu" type="button" data-sm-show-media-selection-on="click">
+              Begin Appointment
+            </button> 
+  
 <div type="numbered" class="ng-scope ng-isolate-scope"><ol ng-transclude="">
 <li class="ng-scope ng-isolate-scope"><div ng-transclude="">
 Finalize your tax prep
