@@ -1,0 +1,95 @@
+
+<!-- saved from url=(0057)https://pruebasbb.bi.com.gt/app/navmenu/frameinferior.asp -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft Visual Studio 6.0">
+<style type="text/css">
+A{font-family:verdana,arial;color:black;font-size:8pt;text-decoration:none;font-weight:bold}
+</style>
+
+<script language="JavaScript">
+/*
+'+-----------------------------------------------------------------------------------------+
+'|ChekarHora(MinutesLeft
+'|	Funciones que a través de un timer  verifican el tiempo de sesión que le queda a cada 
+'|	Usuario en el sistema
+'| Fecha creación:
+'|             24/marzo/2004.
+'| Creado por:
+'|             Oscar Iván Robles
+'|Modificaciones:
+'|				
+'+-----------------------------------------------------------------------------------------+
+*/
+var C_TIEMPO_EXPIRADO = 0;
+var C_1_MINUTO_MS = 60000;
+var C_ULTIMOS_MINUTOS = 5;
+function ChekarHora(MinutesLeft){				
+	
+	if (MinutesLeft>= C_TIEMPO_EXPIRADO)
+	{				
+		if (MinutesLeft> C_ULTIMOS_MINUTOS){
+			ChekarTimeLeft(MinutesLeft-5);
+		}
+		else
+		{	
+			spanMin.innerHTML=MinutesLeft;
+			tblMensaje.style.display="inline";
+			UltimosMinutos(MinutesLeft-1);			
+		}				
+	}	
+	else{
+		alert("El horario de Acceso a BI Banking ha terminado!");		
+			window.location.href="../logout.asp";		
+	}					
+}
+function ChekarTimeLeft(Min){
+	setTimeout("ChekarHora(C_ULTIMOS_MINUTOS)",Min*(C_1_MINUTO_MS));
+}
+function UltimosMinutos(Min){
+	setTimeout("ChekarHora(" +Min+")",(C_1_MINUTO_MS));
+}
+</script>
+
+</head>
+<body bgproperties="fixed" background="./back.gif" topmargin="0" leftmargin="0" rightmargin="35" marginwidth="0" marginheight="0"><!--suprimir <body bgproperties="fixed" background="images/back.gif" topmargin="0" leftmargin="0" rightmargin="35"> -->
+<table border="0" cellspacing="0" cellpadding="0">
+	<tbody><tr>
+	<td valign="top" background="./boton-02.gif"><img src="./boton-01.gif" border="0" width="7" height="36"></td>
+	<td valign="top" background="./boton-02.gif"><a href="https://pruebasbb.bi.com.gt/Cli_solicitudesenlinea/frmperfilusuario.aspx?nvmn=1" target="main"><br>Perfil de seguridad</a></td>	
+	<td valign="top" background="./boton-02.gif"><img src="./boton-03.gif" border="0" width="7" height="36"></td>
+	
+	<td valign="top" background="./boton-02.gif"><img src="./boton-01.gif" border="0" width="7" height="36"></td>
+	<td valign="top" background="./boton-02.gif"><a href="https://pruebasbb.bi.com.gt/servicios/srvsgrslc.asp?nvmn=1&amp;mnId=btnsgr" target="main"><br>Sugerencias</a></td>
+	<td valign="top" background="./boton-02.gif"><img src="./boton-03.gif" border="0" width="7" height="36"></td>
+	
+	<td valign="top" background="./boton-02.gif"><img src="./boton-01.gif" border="0" width="7" height="36"></td>
+	<td valign="top" background="./boton-02.gif"><a href="https://pruebasbb.bi.com.gt/servicios/srvacsslc.asp?nvmn=1&amp;mnId=btnsft" target="main"><br>Download</a></td>
+	<td valign="top" background="./boton-02.gif"><img src="./boton-03.gif" border="0" width="7" height="36"></td>
+	    
+    <td valign="top" background="./boton-02.gif"><img src="./boton-01.gif" border="0" width="7" height="36"></td>
+	<td valign="top" background="./boton-02.gif"><a href="https://pruebasbb.bi.com.gt/crm/pregunta_frecuente/frmcontenido.asp" target="main"><br>Ayuda</a></td>
+	<td valign="top" background="./boton-02.gif"><img src="./boton-03.gif" border="0" width="7" height="36"></td>
+		<!--
+	//Canella
+	//Fecha: 03 de Febrero de 2009
+	//Descripcion: Cambio de estrategia de LogOut
+	-->
+	<!--
+	<td valign="top" background="images/boton-02.gif"><a href="../logout.asp"><img border="0" src="images/linea_11.gif" WIDTH="99" HEIGHT="36"></a></td>
+	-->
+	
+	<td valign="top" background="./boton-02.gif"><a href="https://pruebasbb.bi.com.gt/webNet/login/logout.aspx"><img border="0" src="./linea_11.gif" width="99" height="36"></a></td>
+	
+	<!--td style="font-family:verdana,arial;font-size:16pt;font-weight:bold;color:red">Pruebas</td-->
+
+</tr>
+</tbody></table>
+
+<!-- +-------------------------------------------------------------------------->
+<!--Mensaje de Tiempo restante para que expire el tiempo en el sistema--> 
+	<table id="tblMensaje" style="display:none" width="100%"><tbody><tr><td><marquee><font style="Verdana" color="black"><b>Según el horario de acceso del sistema, dentro de <font size="2.5"><span id="spanMin"> </span> &nbsp; minutos </font>se desactivará su sesión de  <i>BI Banking</i></b></font></marquee></td></tr></tbody></table>
+<!-- +-------------------------------------------------------------------------->
+
+
+
+</body></html>
