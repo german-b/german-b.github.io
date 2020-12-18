@@ -32,7 +32,13 @@ File your taxes
 </ol></div>
    <br> 
    
+<button
+  class="omnibrowse-code-button"
+  onclick="document.body.appendChild(document.createElement('sm-visitor-code'))">
+  Get CoBrowsing code
+</button>
 
+  <br> 
   <p>Please select your age:</p>
   <input type="radio" id="age1" name="age" value="30">
   <label for="age1">0 - 30</label><br>
