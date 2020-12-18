@@ -32,18 +32,18 @@ File your taxes
 </ol></div>
    <br> 
    
-<button class="omnibrowse-code-button">Get CoBrowsing code</button>;
+<button class="omnibrowse-code-button">Get CoBrowsing code</button>
 <script>
-function showVisitorCode() {
-  var code = document.createElement('sm-visitor-code');
-  document.body.appendChild(code);
-}
 
 // Add a "click" event listener to the button. <sm-visitor-code />
 // is added to the DOM when the button is clicked.
 document
   .querySelector('.omnibrowse-code-button')
-  .addEventListener('click', showVisitorCode);
+  .addEventListener('click', function(event){
+      event.preventDefault();
+  var code = document.createElement('sm-visitor-code');
+  document.body.appendChild(code);
+  });
 </script>
   <br> 
   <p>Please select your age:</p>
