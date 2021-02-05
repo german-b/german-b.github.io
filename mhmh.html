@@ -1,0 +1,43 @@
+<script async src="//api.salemove.com/salemove_integration.js"></script>
+
+<script>
+
+  console.log("0");
+
+  sm.getApi({version: 'v1'}).then(function(glia) {
+
+    glia.updateInformation({
+
+      customAttributesUpdateMethod: 'merge',
+
+      customAttributes: {
+
+        'client_location': location.href,
+
+        'client_tab': document.title
+
+      }
+
+    }).then(function() {
+
+      console.log("1");
+
+    }).catch(function(error) {
+
+      if (error.cause == glia.ERRORS.NETWORK_TIMEOUT) {
+
+        console.log("2");
+
+      } 
+
+      else {
+
+        console.log("3");
+
+      }
+
+    });
+
+  });
+
+</script>
