@@ -10,7 +10,7 @@
   <label for="other">Other</label>
 
   <br>
- <button class="js-glia--heathu" type="button">
+ <button class="js-glia--heathu theme-academy_business" type="button">
              js-glia--heathu
             </button> 
             
