@@ -47,7 +47,7 @@ To [WebRTC](/webrtc)
 <div style="background-color: #003979;width: 100px;height: 100px;">
 </div>
 
-<iframe src="https://s.bootsnipp.com/iframe/vl4R7" cobrowsable_iframe_id="3db11631-642c-4acd-837c-954bc3807afd"></iframe>
+<iframe src="https://s.bootsnipp.com/iframe/vl4R7" cobrowsable_iframe_id="3db11631-642c-4acd-837c-954bc3807afd" class="EmbeddedAppFrame"></iframe>
 <style type="text/css">
 
     #EmbeddedAppFrame
@@ -55,7 +55,6 @@ To [WebRTC](/webrtc)
         height: 960px;
         width: 1020px;
         overflow: hidden;
-        background-color: #7c19dd;
         position: relative;
             -ms-zoom: 0.95;
             -moz-transform: scale(0.95);
