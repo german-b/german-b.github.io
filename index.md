@@ -1,4 +1,11 @@
 <script src="https://api.glia.com/salemove_integration.js"></script>
+<script>
+sm.getApi({ version: 'v1' }).then(function (glia) {
+  glia.updateInformation({
+    "customAttributes": {},
+  });
+});
+</script>
 <div>divContent</div>
   <form action="/">
   <p>Please select your gender:</p>
