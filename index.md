@@ -1,8 +1,8 @@
-<script src="https://api.glia.com/salemove_integration.js"></script>
+<script async src="//api.glia.com/salemove_integration.js"></script>
 <script>
 sm.getApi({ version: 'v1' }).then(function (glia) {
   glia.updateInformation({
-    "customAttributes": {},
+    "customAttributes": {}
   });
 });
 </script>
