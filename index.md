@@ -1,11 +1,30 @@
-<script async src="//api.glia.com/salemove_integration.js"></script>
 <script>
-sm.getApi({ version: 'v1' }).then(function (glia) {
-  glia.updateInformation({
-    "customAttributes": {}
+var installGlia=function(a){
+  !function(a,b,c,d){
+    var e = a.createElement(b),
+        f = a.getElementsByTagName(b)[0];
+    e.async=1,
+    e.src=c,
+    e.type="text/javascript",
+    d&&e.addEventListener("load",d),
+    f.parentNode.insertBefore(e,f)
+  }
+  (document,"script","https://api.glia.com/salemove_integration.js",a)
+};
+ 
+installGlia(function(){
+   sm.getApi({version: 'v1'}).then(function(glia) {
+glia.updateInformation({
+      customAttributes: {}
+    }).then(function() {
+        console.log("Visitor Information successfully updated");
+    }).catch(function(error) {
+        console.log("Visitor Information update fails", error);
+    });
   });
 });
 </script>
+
 <div>divContent</div>
   <form action="/">
   <p>Please select your gender:</p>
