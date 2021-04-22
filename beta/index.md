@@ -2,7 +2,44 @@
   src="https://code.jquery.com/jquery-3.6.0.min.js"
   integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
   crossorigin="anonymous"></script>
-<script src="https://api.beta.glia.com/salemove_integration.js"></script>
+<script>
+$(document).ready(function () {
+  //Glia Integration
+  var installGlia = function (a) {
+    !(function (a, b, c, d) {
+      var e = a.createElement(b),
+        f = a.getElementsByTagName(b)[0];
+      (e.async = 1),
+        (e.src = c),
+        (e.type = 'text/javascript'),
+        d && e.addEventListener('load', d),
+        f.parentNode.insertBefore(e, f);
+    })(document, 'script', 'https://api.beta.glia.com/salemove_integration.js', a);
+  };
+  installGlia(function () {
+    sm.getApi({ version: 'v1' }).then(function (glia) {
+      glia
+        .updateInformation({
+          phone: '+10000000000',
+          email: 'An Email',
+          name: 'A Name',
+          externalId: 'An External ID',
+          customAttributes: {
+            Attribute1: 'Value 1',
+            Attribute2: 'Value 2',
+          },
+        })
+        .then(function () {
+          console.log('Visitor info updated');
+        })
+        .catch(function (error) {
+          console.log('Visitor info update failed', error);
+        });
+    });
+  });
+  //End Glia Integration
+});
+</script>
 <link rel="stylesheet" href="../stylesheets/glia.scss">
 <div>divContent</div>
   <form action="/">
