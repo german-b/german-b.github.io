@@ -4,7 +4,6 @@
   crossorigin="anonymous"></script>
 <script>
 $(document).ready(function () {
-$(document).ready(function () {
   //Glia Integration
   var installGlia = function (a) {
     !(function (a, b, c, d) {
@@ -15,13 +14,20 @@ $(document).ready(function () {
         (e.type = 'text/javascript'),
         d && e.addEventListener('load', d),
         f.parentNode.insertBefore(e, f);
-    })(document, 'script', 'https://api.salemove.com/salemove_integration.js?site_id=dcaaf3d3-cf3a-47f4-9fc5-f5a68db6a969', a);
+    })(document, 'script', 'https://api.beta.glia.com/salemove_integration.js?site_id=dcaaf3d3-cf3a-47f4-9fc5-f5a68db6a969', a);
   };
   installGlia(function () {
     sm.getApi({ version: 'v1' }).then(function (glia) {
       glia
         .updateInformation({
-          customAttributes: {},
+          phone: '+10000000000',
+          email: 'An Email',
+          name: 'A Name',
+          externalId: 'An External ID',
+          customAttributes: {
+            Attribute1: 'Value 1',
+            Attribute2: 'Value 2',
+          },
         })
         .then(function () {
           console.log('Visitor info updated');
