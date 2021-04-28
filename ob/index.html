@@ -18,7 +18,7 @@ sm.getApi({version: 'v1'}).then(function(glia) {
     return new Promise(function(resolve, reject) {
       var xhr = new XMLHttpRequest();
       var data = JSON.stringify({
-        "external_id": externalId
+        external_id: externalId
       });
       xhr.open('PATCH', 'https://omnibrowse.salemove.com/sites/' + siteId + '/visitors/' + visitorId);
       xhr.setRequestHeader('Authorization',  'Bearer ' + accessToken);   
