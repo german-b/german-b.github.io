@@ -1,0 +1,62 @@
+
+<script>
+var installGlia=function(a){
+  !function(a,b,c,d){
+    var e = a.createElement(b),
+        f = a.getElementsByTagName(b)[0];
+    e.async=1,
+    e.src=c,
+    e.type="text/javascript",
+    d&&e.addEventListener("load",d),
+    f.parentNode.insertBefore(e,f)
+  }
+  (document,"script","https://api.glia.com/salemove_integration.js",a)
+};
+ 
+installGlia(function(){
+sm.getApi({version: 'v1'}).then(function(glia) {  
+  var setExternalId = function(externalId, siteId, visitorId, accessToken) {
+    return new Promise(function(resolve, reject) {
+      var xhr = new XMLHttpRequest();
+      var data = JSON.stringify({
+        "external_id": externalId
+      });
+      xhr.open('PATCH', 'https://omnibrowse.salemove.com/sites/' + siteId + '/visitors/' + visitorId);
+      xhr.setRequestHeader('Authorization',  'Bearer ' + accessToken);   
+      xhr.onload = function() {
+        if (xhr.status >= 200 && xhr.status < 300) {
+          resolve(xhr.responseText);
+        } else {
+          reject(xhr.statusText);
+        }
+      };
+      xhr.onerror = function() { reject(xhr.statusText); };
+
+      xhr.send(data);
+    });
+  }
+
+  var readExternalId = function(){
+      return (document.location.hash.replace("#",'') || sessionStorage.getItem("username") || "Traci")
+  }
+  
+  var readSiteId = function() {
+      return glia.getSiteId();
+  }
+  
+  var readVisitorId = function() {
+      return glia.getVisitorId();
+  }
+  
+  var readAccessToken = function(){
+      return sm.accessToken;
+  }
+  
+  setExternalId(readExternalId(), readSiteId(), readVisitorId(), readAccessToken()).then(function(result) {
+    console.log(result);
+  }, function(error) {
+    console.log('An error occurred: ', error);
+  });
+})};
+
+</script>
