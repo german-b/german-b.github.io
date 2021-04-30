@@ -13,14 +13,19 @@ var installGlia=function(a){
 };
  
 installGlia(function(){
-   sm.getApi({version: 'v1'}).then(function(glia) {
-glia.updateInformation({
-      customAttributes: {}
-    }).then(function() {
-        console.log("Visitor Information successfully updated");
-    }).catch(function(error) {
-        console.log("Visitor Information update fails", error);
-    });
+sm.getApi({version: 'v1'}).then(function(glia) {
+    // Your code
+    var engagementStart = glia.EVENTS.ENGAGEMENT_START;
+    var engagement;
+    glia.addEventListener(engagementStart, e => {
+      engagement = e;
+    })
+    element = document.getElementsByClassName("resend")[0];
+    element.addEventListener("click", () => {
+      if(engagement){
+        engagement.cobrowser.resendPage();
+      }
+    })
   });
 });
 </script>
@@ -36,11 +41,11 @@ glia.updateInformation({
   <label for="other">Other</label>
 
   <br>
- <button class="js-glia--heathu theme-academy_business" type="button">
+ <button class="resend" type="button">
              js-glia--heathu
             </button> 
             
- <button class="co-team_bio__btn js-glia--heathu" type="button">
+ <button class="resend" type="button">
               co-team_bio__btn js-glia--heathu
 </button> 
   
