@@ -34,8 +34,8 @@ sm.getApi({version: 'v1'}).then(function(glia) {
 <a href="https://www.err.ee/">News in current tab</a>
 <a href="https://www.err.ee/" target="_blank">News in a new tab</a>
 <a href="https://github.com/german-b/german-b.github.io/blob/master/index.md" target="_blank">Edit this page</a>
-<a href="german-b.github.io/beta">Beta</a>
-<a href="german-b.github.io/eu">EU</a>
+<a href="https://german-b.github.io/beta">Beta</a>
+<a href="https://german-b.github.io/eu">EU</a>
   <form action="/">
   <p>Please select your gender:</p>
   <input type="radio" id="male" name="gender" value="male">
