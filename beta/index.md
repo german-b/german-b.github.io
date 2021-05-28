@@ -74,7 +74,7 @@ To [WebRTC](/webrtc)
 <div style="background-color: #003979;width: 100px;height: 100px;">
 </div>
 
-<iframe src="https://gerxglia.tumblr.com/"></iframe>
+<iframe src="https://1nkzu.github.io/"></iframe>
 <style type="text/css">
 
     #EmbeddedAppFrame
