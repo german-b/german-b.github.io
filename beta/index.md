@@ -26,8 +26,64 @@ $(document).ready(function () {
   //End Glia Integration
 });
 </script>
-<link rel="stylesheet" href="../stylesheets/glia.scss">
 <div>divContent</div>
+
+<div class="login-fields"><div class="field" id="email"><input type="text" name="email" id="email" placeholder="Enter your email address" autocomplete="off" ><span class="login-field-label">Email Address</span></div><div class="field" id="password"><input type="password" name="password" id="password" placeholder="Enter your password" autocomplete="off" ><span class="login-field-label">Password</span></div></div>
+
+<form class="login" onsubmit="" _lpchecked="1">
+  <ul class="list">
+    <li class="items email">
+      <label class="login-email" for="login-email">
+        <div class="input">
+          <input
+            name="login-email"
+            placeholder="Email"
+            id="login-email"
+            type="text"
+            tabindex="1"
+            value=""
+            autocomplete="off"
+          />
+          <div class="dropMenu animate" style="display: none">
+            <div class="barWrap" style="display: block">
+              <div
+                class="bar"
+                style="height: 252px; transition: top 0.12s ease 0s; top: 0px"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </label>
+      <p class="login-email-tip" style=""></p>
+    </li>
+    <li class="items pwd">
+      <label for="login-pwd">
+        <div class="input">
+          <input
+            name="login-pwd"
+            placeholder="Password"
+            id="login-pwd"
+            type="password"
+            tabindex="2"
+            value=""
+            autocomplete="off"
+          />
+        </div>
+      </label>
+    </li>
+    <li class="submit">
+      <input
+        name="login-submit"
+        id="login-submit"
+        type="submit"
+        tabindex="3"
+        value="Sign in"
+      />
+    </li>
+  </ul>
+</form>
+
+
   <form action="/">
   <p>Please select your gender:</p>
   <input type="radio" id="male" name="gender" value="male">
