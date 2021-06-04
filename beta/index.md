@@ -28,6 +28,8 @@ $(document).ready(function () {
 </script>
 <div>divContent</div>
 
+<button mat-raised-button="" color="primary" class="mat-focus-indicator add-message-button mat-raised-button mat-button-base mat-primary"><span class="mat-button-wrapper"> Compose Message </span><span matripple="" class="mat-ripple mat-button-ripple"></span><span class="mat-button-focus-overlay"></span></button>
+
 <div class="login-fields"><div class="field" id="email"><input type="text" name="email" id="email" placeholder="Enter your email address" autocomplete="off" ><span class="login-field-label">Email Address</span></div><div class="field" id="password"><input type="password" name="password" id="password" placeholder="Enter your password" autocomplete="off" ><span class="login-field-label">Password</span></div></div>
 
 <form class="login" onsubmit="" _lpchecked="1">
