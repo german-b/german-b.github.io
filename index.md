@@ -35,6 +35,7 @@ sm.getApi({version: 'v1'}).then(function(glia) {
 <a href="https://github.io/">Github.io in current tab</a><br>
 <a href="https://german-b.github.io/">Current page in current tab</a><br>
 <a href="https://www.err.ee/" target="_blank">News in a new tab</a><br>
+<a href="https://www.err.ee/" target="_system">News in system</a><br>
 <a href="https://www.err.ee/">News in current tab</a><br>
 <a href="https://github.com/german-b/german-b.github.io/blob/master/index.md" target="_blank">Edit this page</a><br>
 <a href="https://german-b.github.io/beta">Beta in current tab</a><br>
