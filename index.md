@@ -28,6 +28,12 @@ sm.getApi({version: 'v1'}).then(function(glia) {
     })
   });
 });
+  
+function t(tag_id, engagmentMetadata){
+  console.log("Tag ID: ", tag_id);
+  console.log("Engagement Metadata:");
+  console.log(engagmentMetadata);
+  }  
 </script>
 
 <div>divContent</div>
