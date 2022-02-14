@@ -14,7 +14,7 @@ $(document).ready(function () {
         (e.type = 'text/javascript'),
         d && e.addEventListener('load', d),
         f.parentNode.insertBefore(e, f);
-    })(document, 'script', 'https://api.beta.glia.com/salemove_integration.js?site_id=dcaaf3d3-cf3a-47f4-9fc5-f5a68db6a969', a);
+    })(document, 'script', 'https://api.beta.glia.com/salemove_integration.js', a);
   };
   installGlia(function () {
     sm.getApi({ version: 'v1' }).then(function (glia) {
@@ -26,6 +26,7 @@ $(document).ready(function () {
   //End Glia Integration
 });
 </script>
+<script src="https://abe-embedded-web.s3.amazonaws.com/glia-custom-renderer-latest.js?b={{abeglia12422}}" async=""></script>
 <div>divContent</div>
 
 <button mat-raised-button="" color="primary" class="mat-focus-indicator add-message-button mat-raised-button mat-button-base mat-primary"><span class="mat-button-wrapper"> Compose Message </span><span matripple="" class="mat-ripple mat-button-ripple"></span><span class="mat-button-focus-overlay"></span></button>
