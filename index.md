@@ -35,6 +35,7 @@ function t(tag_id, engagmentMetadata){
   console.log(engagmentMetadata);
   }  
 </script>
+<script type="application/javascript" src="https://js.poshdevelopment.com/glia/render.js"></script>
 
 <div>divContent</div>
 <a href="https://github.com/">Github in current tab</a><br>
