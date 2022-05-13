@@ -14,7 +14,7 @@ $(document).ready(function () {
         (e.type = 'text/javascript'),
         d && e.addEventListener('load', d),
         f.parentNode.insertBefore(e, f);
-    })(document, 'script', 'https://api.beta.glia.com/salemove_integration.js', a);
+    })(document, 'script', 'https://api.beta.glia.com/salemove_integration.js?', a);
   };
   installGlia(function () {
     sm.getApi({ version: 'v1' }).then(function (glia) {
