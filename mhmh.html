@@ -1,44 +1,11 @@
-<script async src="//api.salemove.com/salemove_integration.js"></script>
+<script async src="https://api.glia.com/salemove_integration.js"></script>
 
-<script>
-
-  console.log("0");
-window.onload = function () { 
-  sm.getApi({version: 'v1'}).then(function(glia) {
-
-    glia.updateInformation({
-
-      customAttributesUpdateMethod: 'merge',
-
-      customAttributes: {
-
-        'client_location': location.href,
-
-        'client_tab': document.title
-
-      }
-
-    }).then(function() {
-
-      console.log("1");
-
-    }).catch(function(error) {
-
-      if (error.cause == glia.ERRORS.NETWORK_TIMEOUT) {
-
-        console.log("2");
-
-      } 
-
-      else {
-
-        console.log("3");
-
-      }
-
-    });
-
-  });
-};
-
-</script>
+<div class="border-top border-bottom ng-star-inserted">
+    <ui-core-button width="full" buttonclass="justify-content-start px-4 py-2" _nghost-xio-c64="" tabindex="-1"><button
+            _ngcontent-xio-c64="" type="button"
+            class="btn-tertiary width-full justify-content-start px-4 py-2 fs-unmask" data-sm-show-media-selection-on="click">
+            <i _ngcontent-xio-c64="" aria-hidden="true" ui-core-icon-renderer=""
+                class="material-icons ng-star-inserted">forum</i>
+            Start a Chat
+        </button></ui-core-button>
+</div>
