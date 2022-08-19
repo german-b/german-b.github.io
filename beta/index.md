@@ -1,7 +1,3 @@
-<script
-  src="https://code.jquery.com/jquery-3.6.0.min.js"
-  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-  crossorigin="anonymous"></script>
 <script>
 $(document).ready(function () {
 //Glia Integration
@@ -26,7 +22,8 @@ $(document).ready(function () {
   //End Glia Integration
 });
 </script>
-<script src="https://abe-embedded-web.s3.amazonaws.com/glia-custom-renderer-latest.js?b={{abeglia12422}}" async=""></script>
+<script type="text/javascript" src="https://js.poshdevelopment.com/glia/render.js"></script>
+<script async="async" src="https://integration.silvercloudinc.com/js/silvercloudjs/silvercloud-glia.js"></script>
 <div>divContent</div>
 
 <button mat-raised-button="" color="primary" class="mat-focus-indicator add-message-button mat-raised-button mat-button-base mat-primary"><span class="mat-button-wrapper"> Compose Message </span><span matripple="" class="mat-ripple mat-button-ripple"></span><span class="mat-button-focus-overlay"></span></button>
