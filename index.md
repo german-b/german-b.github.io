@@ -35,7 +35,22 @@ function t(tag_id, engagmentMetadata){
   console.log(engagmentMetadata);
   }  
 </script>
-<script type="application/javascript" src="https://js.poshdevelopment.com/glia/render.js"></script>
+<script>
+ const observeNode = document.getElementsByClassName("sm-visitor-app")[0];
+      const config = { attributes: true, childList: true, subtree: true };
+      const callback = (mutationList, observer) => {
+       for (const mutation of mutationList) {
+          if (mutation.type === 'childList') {
+              const targetToClick = document.getElementsByClassName("sm-media-button-text")[0]; //Possible values: "sm-media-button-video", "sm-media-button-audio", "sm-media-button-phone", "sm-media-button-text"
+             if(targetToClick){
+                 targetToClick.click();
+             }
+         }
+        }
+      };
+      const observer = new MutationObserver(callback);
+      observer.observe(observeNode, config);
+</script>
 
 <div>divContent</div>
 <a href="https://github.com/">Github in current tab</a><br>
