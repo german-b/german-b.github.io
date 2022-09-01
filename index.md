@@ -36,7 +36,8 @@ function t(tag_id, engagmentMetadata){
   }  
 </script>
 <script>
- const observeNode = document.getElementsByClassName("sm-visitor-app")[0];
+  window.onload = function () {
+   const observeNode = document.getElementsByClassName("sm-visitor-app")[0];
       const config = { attributes: true, childList: true, subtree: true };
       const callback = (mutationList, observer) => {
        for (const mutation of mutationList) {
@@ -50,6 +51,7 @@ function t(tag_id, engagmentMetadata){
       };
       const observer = new MutationObserver(callback);
       observer.observe(observeNode, config);
+}
 </script>
 
 <div>divContent</div>
