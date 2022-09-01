@@ -36,7 +36,6 @@ function t(tag_id, engagmentMetadata){
   }  
 </script>
 <script>
-  window.onload = function () {
    const observeNode = document.querySelector('body');
       const config = { attributes: true, childList: true, subtree: true };
       const callback = (mutationList, observer) => {
@@ -53,7 +52,6 @@ function t(tag_id, engagmentMetadata){
       };
       const observer = new MutationObserver(callback);
       observer.observe(observeNode, config);
-}
 </script>
 
 <div>divContent</div>
