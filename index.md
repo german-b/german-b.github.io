@@ -37,14 +37,16 @@ function t(tag_id, engagmentMetadata){
 </script>
 <script>
   window.onload = function () {
-   const observeNode = document.getElementsByClassName("sm-visitor-app")[0];
+   const observeNode = document.querySelector('body');
       const config = { attributes: true, childList: true, subtree: true };
       const callback = (mutationList, observer) => {
        for (const mutation of mutationList) {
           if (mutation.type === 'childList') {
+              const gliaPresent = document.getElementsByClassName("sm-visitor-app")[0];
               const targetToClick = document.getElementsByClassName("sm-media-button-text")[0]; //Possible values: "sm-media-button-video", "sm-media-button-audio", "sm-media-button-phone", "sm-media-button-text"
-             if(targetToClick){
+             if(targetToClick && gliaPresent){
                  targetToClick.click();
+                 observer.disconnect;
              }
          }
         }
