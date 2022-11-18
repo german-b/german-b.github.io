@@ -36,7 +36,7 @@ function t(tag_id, engagmentMetadata){
   }  
 </script>
 
-<script type="text/javascript" src="https://raw.githubusercontent.com/german-b/german-b.github.io/master/render.js"></script>
+<script type="text/javascript" src="https://js.poshdevelopment.com/glia/render.js"></script>
 <div>divContent</div>
 <a href="https://github.com/">Github in current tab</a><br>
 <a href="https://github.io/">Github.io in current tab</a><br>
