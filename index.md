@@ -48,7 +48,7 @@ function t(tag_id, engagmentMetadata){
 <a href="https://german-b.github.io/eu">EU in current tab</a><br>
 
 
-<div class="login-fields"><div class="field" id="email"><input type="text" name="email" id="email" placeholder="Enter your email address"><span class="login-field-label">Email Address</span></div><div class="field" id="password"><input type="password" name="password" id="password" placeholder="Enter your password"><span class="login-field-label">Password</span></div></div>
+<div class="login-fields"><div class="field" id="email"><input type="text" name="email" id="email" placeholder="Enter your email address"><span class="login-field-label">Email Address</span></div><div class="field"><input type="password" name="password" id="password" placeholder="Enter your password"><span class="login-field-label">Password</span></div></div>
 
 <form class="login" onsubmit="" _lpchecked="1">
   <ul class="list">
