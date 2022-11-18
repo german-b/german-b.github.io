@@ -35,27 +35,6 @@ function t(tag_id, engagmentMetadata){
   console.log(engagmentMetadata);
   }  
 </script>
-<script>
-  window.onload = function (){
-   const observeNode = document.querySelector('body');
-      const config = { attributes: true, childList: true, subtree: true };
-      const callback = (mutationList, observer) => {
-       for (const mutation of mutationList) {
-          if (mutation.type === 'childList') {
-              const gliaPresent = document.getElementsByClassName("sm-visitor-app")[0];
-              const targetToClick = document.getElementsByClassName("sm-media-button-text")[0]; //Possible values: "sm-media-button-video", "sm-media-button-audio", "sm-media-button-phone", "sm-media-button-text"
-             if(targetToClick && gliaPresent){
-                 targetToClick.click();
-                 observer.disconnect;
-             }
-         }
-        }
-      };
-      const observer = new MutationObserver(callback);
-      observer.observe(observeNode, config);
-  }
-</script>
-
 <div>divContent</div>
 <a href="https://github.com/">Github in current tab</a><br>
 <a href="https://github.io/">Github.io in current tab</a><br>
