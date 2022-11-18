@@ -12,22 +12,7 @@ var installGlia=function(a){
   (document,"script","https://api.glia.com/salemove_integration.js",a)
 };
  
-installGlia(function(){
-sm.getApi({version: 'v1'}).then(function(glia) {
-    // Your code
-    var engagementStart = glia.EVENTS.ENGAGEMENT_START;
-    var engagement;
-    glia.addEventListener(engagementStart, e => {
-      engagement = e;
-    })
-    element = document.getElementsByClassName("resend")[0];
-    element.addEventListener("click", () => {
-      if(engagement){
-        engagement.cobrowser.resendPage();
-      }
-    })
-  });
-});
+installGlia();
   
 function t(tag_id, engagmentMetadata){
   console.log("Tag ID: ", tag_id);
