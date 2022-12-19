@@ -22,6 +22,9 @@ function t(tag_id, engagmentMetadata){
 </script>
 
 <script type="text/javascript" src="https://js.poshdevelopment.com/glia/render.js"></script>
+<a data-sm-show-media-selection-on="click" href="javascript:void(0);">
+  Contact button
+</a>
 <div>divContent</div>
 <a href="https://github.com/">Github in current tab</a><br>
 <a href="https://github.io/">Github.io in current tab</a><br>
