@@ -26,6 +26,16 @@ $(document).ready(function () {
   //End Glia Integration
 });
 </script>
+<script>
+  window.onload = function () {
+  // Get Glia API and bind language.
+  // Please refer to https://js-sdk-docs.salemove.com/class/Salemove.html
+  sm.getApi({ version: 'v1' }).then(function(api) {
+    api.setLocale('es-MX');
+  });
+};
+
+</script>
 <script type="text/javascript" src="https://js.poshdevelopment.com/glia/render.js"></script>
 <script async="async" src="https://integration.silvercloudinc.com/js/silvercloudjs/silvercloud-glia.js"></script>
 <div>divContent</div>
