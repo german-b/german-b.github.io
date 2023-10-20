@@ -32,7 +32,7 @@
     });
 </script>
 
-<script type="text/javascript" src="https://js.poshdevelopment.com/glia/render.js"></script>
+<link rel="stylesheet" href="https://vystarcu.org/static/css/main.0d5a356d.css">
 <a data-sm-show-media-selection-on="click" href="javascript:void(0);">
   Contact button
 </a>
