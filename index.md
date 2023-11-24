@@ -15,13 +15,6 @@
     installGlia(function(){
         sm.getApi({version: 'v1'}).then(function(glia) {
             glia.updateInformation({
-                phone: '+10000000000',
-                email: "An Email",
-                name: "A Name",
-                externalId: "An External ID",
-                customAttributes: {
-                    Attribute1: "Value 1",
-                    Attribute2: "Value 2"
                 }
             }).then(function() {
                 //Callback fired after the Visitor Information has been successfully updated
