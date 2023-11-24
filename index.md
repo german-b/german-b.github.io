@@ -14,8 +14,7 @@
 
     installGlia(function(){
         sm.getApi({version: 'v1'}).then(function(glia) {
-            glia.updateInformation({
-                })
+            glia.updateInformation()
             }).then(function() {
                 //Callback fired after the Visitor Information has been successfully updated
             }).catch(function(error) {
