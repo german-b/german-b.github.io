@@ -21,7 +21,6 @@
                 //Callback fired when the request for updating the Visitor Information fails
             });
         });
-    });
 </script>
 
 <link rel="stylesheet" href="https://vystarcu.org/static/css/main.0d5a356d.css">
