@@ -37,6 +37,7 @@
 <a href="https://github.com/german-b/german-b.github.io/blob/master/index.md" target="_blank">Edit this page</a><br>
 <a href="https://german-b.github.io/beta">Beta in current tab</a><br>
 <a href="https://german-b.github.io/eu">EU in current tab</a><br>
+<a id="lnkLogout" href="/Login/Logout" target="_self" class="nav-link text-white px-2"><i class="fas fa-sign-out-alt"> </i> Logout </a>
 
 
 <div class="login-fields"><div class="field" id="email"><input type="text" name="email" id="email" placeholder="Enter your email address"><span class="login-field-label">Email Address</span></div><div class="field"><input type="password" name="password" id="password" placeholder="Enter your password"><span class="login-field-label">Password</span></div></div>
