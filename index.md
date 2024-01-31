@@ -160,7 +160,9 @@ To [WebRTC](/webrtc)
 <div style="background-color: #003979;width: 100px;height: 100px;">
 </div>
 
-<iframe src="" cobrowsable_iframe_id="3db11631-642c-4acd-837c-954bc3807afd" cobrowsable_with_mutations="true" id="EmbeddedAppFrame"></iframe>
+<iframe src="" cobrowsable_iframe_id="3db11631-642c-4acd-837c-954bc3807afd" cobrowsable_with_mutations="true" id="EmbeddedAppFrame">
+    <button class="omnibrowse-code-button">Get CoBrowsing code</button>
+</iframe>
 <style type="text/css">
 
     #EmbeddedAppFrame
