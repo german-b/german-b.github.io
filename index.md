@@ -86,9 +86,15 @@
         name="login-submit"
         id="login-submit"
         type="submit"
+        class="sm_cobrowsing_disabled_field"
         tabindex="3"
         value="Sign in"
       />
+              <button
+        type="submit"
+        class="sm_cobrowsing_disabled_field"
+        value="Sign in"
+      >Submit</button>
     </li>
   </ul>
 </form>
