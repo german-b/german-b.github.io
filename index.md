@@ -103,7 +103,7 @@
   <label for="other">Other</label>
 
   <br>
- <button class="resend" type="button">
+ <button class="resend sm_cobrowsing_disabled_field" type="button">
              js-glia--heathu
             </button> 
             
